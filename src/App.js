@@ -11,9 +11,19 @@ function App() {
     <div className="App">
       <TopMenu></TopMenu>
         <Header></Header>
-        <Content tieude="Content 1" vitri2="order-lg-2" anh="01"></Content>
-        <Content tieude="Content 2" anh="02"></Content>
-        <Content tieude="Content 3" vitri2="order-lg-2" anh="03"></Content>
+      <div className="container">
+        <div className="row pt-5">
+          <Content tieude="Content 1" vitri2="order-lg-2" anh="01"></Content>
+          <Content tieude="Content 2" vitri2="order-lg-2" anh="02"></Content>
+          <Content tieude="Content 3" vitri2="order-lg-2" anh="03"></Content>
+          <Content tieude="Content 1" vitri2="order-lg-2" anh="01"></Content>
+          <Content tieude="Content 2" vitri2="order-lg-2" anh="02"></Content>
+          <Content tieude="Content 3" vitri2="order-lg-2" anh="03"></Content>
+          <Content tieude="Content 1" vitri2="order-lg-2" anh="01"></Content>
+          <Content tieude="Content 2" vitri2="order-lg-2" anh="02"></Content>
+          <Content tieude="Content 3" vitri2="order-lg-2" anh="03"></Content>
+        </div>
+      </div>
         <Footer></Footer>
     </div>
   );
