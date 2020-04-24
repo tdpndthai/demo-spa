@@ -33,7 +33,8 @@ class Content extends Component {
     renderForm=()=>(
         <div className="row">
             <div className="from-group">
-                <input type="text" name="name" className="form-control"/>
+                {/*trunggian ko phải biến state*/}
+                <input ref={(dulieunhap)=>{this.trunggian=dulieunhap}} defaultValue={this.props.tieude} type="text" name="name" className="form-control"/>
                 <div className="btn btn-success" onClick={()=>this.saveClick()}>Save</div>
             </div>
         </div>
@@ -59,6 +60,7 @@ class Content extends Component {
                 status:0
             }
         );  //code snippet sst
+        console.log(this.trunggian.value)
     }
 
     render() {
